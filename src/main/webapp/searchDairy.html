@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<head>
+  <title>Dairy Products</title>
+  <style>
+body {
+    margin: 0;
+   	background-image: url("marguerite-729510.jpg");
+	background-size: 100% 160%;
+}
+</style>
+</head>
+
+<div>
+  <form action="/searchdairy" method="get"> <br><br>
+    <label style="font-size:25px; color:green; margin: 50px;" for="name" >Введите название продукта для поиска:</label><br>
+    <input style="font-size:15px; color:green; margin: 40px;" type="text" id="name" name="name"><br>
+    <label style="font-size:25px; color:green; margin: 50px;" for="manufacturer" >Выбор производителя продукта:</label><br>
+    <input style="font-size:15px; color:green; margin: 40px;" type="text" id="manufacturer" name="manufacturer">
+    <br>
+    <input style="font-size:15px; color:red; margin: 50px;" type="submit" value="Submit">
+  </form>
+
+  <div>
+    <p><a href="./dairyinfo">Просмотр всех молочных продуктов</a>  </p>
+  </div>
+
+
+  <div>
+    <p><a style="font-size:20px; color:white; margin: 50px;" href="./">Вернуться на главную</a> </p>
+  </div>
+
+</div>
+
+</body>
+</html>

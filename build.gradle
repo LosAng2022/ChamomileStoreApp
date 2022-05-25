@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'org.gretty' version '3.0.7'
+    id 'war'
+}
+
+group 'ru.store'
+version '2.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    //compileOnly 'javax.servlet:javax.servlet-api:3.0.1'
+}
+
+
+gretty {
+    httpPort = 8082
+    contextPath = '/'
+}
