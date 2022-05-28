@@ -58,7 +58,7 @@ public class ProductService {
 
     public static ArrayList<Bakery> allBakery() {
         ArrayList<Bakery> bakeryArrayList = new ArrayList();
-        Bread bread = new Bread("Bread", 265.0, 1.0, "BreadFactoryA", "Russia", 75.90);
+        Bread bread = new Bread("Хлеб", 265.0, 1.0, "Пекарня А", "Россия", 75.90);
         Bread bread1 = new Bread("Bread", 275.0, 1.0, "BreadFactoryA", "Russia", 80.0);
         Bread bread2 = new Bread("Bread", 280.0, 1.0, "BreadFactoryA", "Russia", 85.0);
         Bread bread3 = new Bread("Bread", 265.0, 0.5, "BreadFactoryB", "Russia", 90.0);
