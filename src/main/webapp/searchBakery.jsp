@@ -9,7 +9,7 @@
         <label style="font-size:20px; color: gold; margin: 40px;" for="name" >Введите название продукта для поиска:</label><br>
         <input style="font-size:20px; color: black; margin: 40px; background: cornsilk;" type="text" id="name" name="name"><br>
 
-        <label style="font-size:20px; color:gold; margin: 40px;" for="manufacturer" >Выбор производителя продукта:</label><br>
+        <label style="font-size:20px; color: gold; margin: 40px;" for="manufacturer" >Выбор производителя продукта:</label><br>
         <input style="font-size:20px; color:black; margin: 40px; background: cornsilk;" type="text" id="manufacturer" name="manufacturer"><br>
 
         <label style="font-size: 20px; color: gold; margin: 40px;" for="countryOfOrigin">Страна производитель:</label><br>
