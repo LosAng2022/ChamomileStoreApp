@@ -44,63 +44,93 @@ public class SearchBakeryServlet extends HttpServlet {
 
             if (Objects.equals(productName, foundBakery.getName())) {
 
-                response.getWriter().append("<p " + SEARCH_OUTPUT_OTHER + "> Name: " + foundBakery.getName() +
-                        ", calorie content: " + foundBakery.getCaloricContent() +
-                        ", weight: " + foundBakery.getWeight() +
-                        ", manufacturer: " + foundBakery.getManufacturer() +
-                        ", country of origin: " + foundBakery.getCountryOfOrigin() +
-                        ", price: " + foundBakery.getPrice() + "</p>");
+                response.getWriter().append(TABLE_BEGIN +
+                        "  <tr>\n" +
+                        "    <td>" + foundBakery.getName() + "</td>\n" +
+                        "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
+                        "    <td>" + foundBakery.getWeight() + "</td>\n" +
+                        "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
+                        "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
+                        "    <td>" + foundBakery.getPrice() + "</td>\n" +
+                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "  </tr>\n" +
+                        "</table>");
 
             }
             if (Objects.equals(productManufacturer, foundBakery.getManufacturer())) {
 
-                response.getWriter().append("<p " + SEARCH_OUTPUT_OTHER + "> Name: " + foundBakery.getName() +
-                        ", calorie content: " + foundBakery.getCaloricContent() +
-                        ", weight: " + foundBakery.getWeight() +
-                        ", manufacturer: " + foundBakery.getManufacturer() +
-                        ", country of origin: " + foundBakery.getCountryOfOrigin() +
-                        ", price: " + foundBakery.getPrice() + "</p>");
+                response.getWriter().append(TABLE_BEGIN +
+                        "  <tr>\n" +
+                        "    <td>" + foundBakery.getName() + "</td>\n" +
+                        "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
+                        "    <td>" + foundBakery.getWeight() + "</td>\n" +
+                        "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
+                        "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
+                        "    <td>" + foundBakery.getPrice() + "</td>\n" +
+                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "  </tr>\n" +
+                        "</table>");
             }
             if (Objects.equals(productCountryOfOrigin, foundBakery.getCountryOfOrigin())) {
 
-                response.getWriter().append("<p " + SEARCH_OUTPUT_OTHER + "> Name: " + foundBakery.getName() +
-                        ", calorie content: " + foundBakery.getCaloricContent() +
-                        ", weight: " + foundBakery.getWeight() +
-                        ", manufacturer: " + foundBakery.getManufacturer() +
-                        ", country of origin: " + foundBakery.getCountryOfOrigin() +
-                        ", price: " + foundBakery.getPrice() + "</p>");
+                response.getWriter().append(TABLE_BEGIN +
+                        "  <tr>\n" +
+                        "    <td>" + foundBakery.getName() + "</td>\n" +
+                        "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
+                        "    <td>" + foundBakery.getWeight() + "</td>\n" +
+                        "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
+                        "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
+                        "    <td>" + foundBakery.getPrice() + "</td>\n" +
+                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "  </tr>\n" +
+                        "</table>");
             }
             double cC = foundBakery.getCaloricContent();
             String calorie = Double.toString(cC);
             if (Objects.equals(productCaloricContent, calorie)) {
-                response.getWriter().append("<p " + SEARCH_OUTPUT_OTHER + "> Name: " + foundBakery.getName() +
-                        ", calorie content: " + foundBakery.getCaloricContent() +
-                        ", weight: " + foundBakery.getWeight() +
-                        ", manufacturer: " + foundBakery.getManufacturer() +
-                        ", country of origin: " + foundBakery.getCountryOfOrigin() +
-                        ", price: " + foundBakery.getPrice() + "</p>");
+                response.getWriter().append(TABLE_BEGIN +
+                        "  <tr>\n" +
+                        "    <td>" + foundBakery.getName() + "</td>\n" +
+                        "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
+                        "    <td>" + foundBakery.getWeight() + "</td>\n" +
+                        "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
+                        "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
+                        "    <td>" + foundBakery.getPrice() + "</td>\n" +
+                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "  </tr>\n" +
+                        "</table>");
 
             }
             double wG = foundBakery.getWeight();
             String weight = Double.toString(wG);
             if (Objects.equals(productWeight, weight)) {
-                response.getWriter().append("<p " + SEARCH_OUTPUT_OTHER + "> Name: " + foundBakery.getName() +
-                        ", calorie content: " + foundBakery.getCaloricContent() +
-                        ", weight: " + foundBakery.getWeight() +
-                        ", manufacturer: " + foundBakery.getManufacturer() +
-                        ", country of origin: " + foundBakery.getCountryOfOrigin() +
-                        ", price: " + foundBakery.getPrice() + "</p>");
+                response.getWriter().append(TABLE_BEGIN +
+                        "  <tr>\n" +
+                        "    <td>" + foundBakery.getName() + "</td>\n" +
+                        "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
+                        "    <td>" + foundBakery.getWeight() + "</td>\n" +
+                        "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
+                        "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
+                        "    <td>" + foundBakery.getPrice() + "</td>\n" +
+                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "  </tr>\n" +
+                        "</table>");
 
             }
             double pR = foundBakery.getPrice();
             String price = Double.toString(pR);
             if (Objects.equals(productPrice, price)) {
-                response.getWriter().append("<p " + SEARCH_OUTPUT_OTHER + "> Name: " + foundBakery.getName() +
-                        ", calorie content: " + foundBakery.getCaloricContent() +
-                        ", weight: " + foundBakery.getWeight() +
-                        ", manufacturer: " + foundBakery.getManufacturer() +
-                        ", country of origin: " + foundBakery.getCountryOfOrigin() +
-                        ", price: " + foundBakery.getPrice() + "</p>");
+                response.getWriter().append(TABLE_BEGIN +
+                        "  <tr>\n" +
+                        "    <td>" + foundBakery.getName() + "</td>\n" +
+                        "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
+                        "    <td>" + foundBakery.getWeight() + "</td>\n" +
+                        "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
+                        "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
+                        "    <td>" + foundBakery.getPrice() + "</td>\n" +
+                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "  </tr>\n" +
+                        "</table>");
 
             }
 

@@ -37,9 +37,9 @@ public class Cereal extends Product {
 
     @Override
     public String toString() {
-        return "Bakery : " + "name: " + getName() + ", calorie content: " + getCaloricContent() + " kDj " +
-                ", weight: " + getWeight() + " kg " + ", manufacturer: " + getManufacturer() +
-                ", country of origin: " + getCountryOfOrigin() + ", price: " + getPrice() + " rub.";
+        return "Bakery : " + "name: " + getName() + ", calorie content: " + getCaloricContent() +
+                ", weight: " + getWeight() + ", manufacturer: " + getManufacturer() +
+                ", country of origin: " + getCountryOfOrigin() + ", price: " + getPrice();
 
     }
 }

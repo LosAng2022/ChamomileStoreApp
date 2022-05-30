@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import static ru.storeone.constant.Param.ADD_TO_BASKET_A_P;
+
 @WebServlet(urlPatterns = {"/beeinfo"})
 public class AllBeeProductsServlet extends HttpServlet {
 
@@ -42,7 +44,9 @@ public class AllBeeProductsServlet extends HttpServlet {
                     "    <td>" + bP.getWeight() + "</td>\n" +
                     "    <td>" + bP.getManufacturer() + "</td>\n" +
                     "    <td>" + bP.getCountryOfOrigin() + "</td>\n" +
-                    "    <td>" + bP.getPrice() + "</td>\n" + " </tr>");
+                    "    <td>" + bP.getPrice() + "</td>\n" +
+                    "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                    " </tr>");
         }
         response.getWriter().append(TABLE_END);
 

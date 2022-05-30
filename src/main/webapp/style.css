@@ -6,13 +6,13 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-
 table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
+    border: 1px solid white;
+    border-collapse: collapse;
 }
+
 th, td {
-  background-color: white;
+    background-color: #96D4D4;
 }
 
 

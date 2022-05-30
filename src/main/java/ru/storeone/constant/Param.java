@@ -15,4 +15,8 @@ public class Param {
     public static final String SEARCH_OUTPUT_OTHER = "style=font-size:20px;color:dark";
 
     public static final String RETURN_BACK_A_P = "<p><a href=\"./\">Return back</a></p>";
+
+    public static final String TABLE_BEGIN = "<table style=\"width:100%\">\n";
+
+    public static final String ADD_TO_BASKET_A_P = "<p><a href=\"./addToBasket?name=\">Add to basket</a></p>";
 }

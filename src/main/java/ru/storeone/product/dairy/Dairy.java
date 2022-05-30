@@ -36,8 +36,8 @@ public class Dairy extends Product {
     @Override
     public String toString() {
         return "Dairy product : " + "name: " + getName() + ", fat content: " + getFatContent() + " % " +
-                ", volume: " + getVolume() + " lit." + ", manufacturer: " + getManufacturer() +
-                ", country of origin: " + getCountryOfOrigin() + ", price: " + getPrice() + " rub.";
+                ", volume: " + getVolume() + ", manufacturer: " + getManufacturer() +
+                ", country of origin: " + getCountryOfOrigin() + ", price: " + getPrice();
 
     }
 
