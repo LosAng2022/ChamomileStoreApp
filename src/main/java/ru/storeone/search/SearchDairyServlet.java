@@ -12,10 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Objects;
 
+import static ru.storeone.constant.Param.*;
+
 @WebServlet(urlPatterns = {"/searchdairy"})
 public class SearchDairyServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
+
+
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
@@ -28,7 +32,7 @@ public class SearchDairyServlet extends HttpServlet {
 
         for (int i = 0; i < ProductService.allDP().size(); i++) {
             Dairy foundDairy = ProductService.allDP().get(i);
-            response.getWriter().append("<html><head><link rel=\"stylesheet\" href=\"style.css\">\n</head><body>");
+            response.getWriter().append(HTML_BODY_BEGIN);
             if (Objects.equals(productName,foundDairy.getName()) || Objects.equals(productManufacturer, foundDairy.getManufacturer())) {
 
                 response.getWriter().append("<p style=font-size:15px;color:white> Name: " + foundDairy.getName() +
@@ -39,10 +43,11 @@ public class SearchDairyServlet extends HttpServlet {
                         ", price: " + foundDairy.getPrice() + "</p>");
                 }
 
-                response.getWriter().append("</body></html>");
+                response.getWriter().append(HTML_BODY_END);
             }
-            response.getWriter().append("<p><a href=\"./\">Return back</a></p>");
-            response.getWriter().append("<p><a href=\"./dairyinfo></a></p>");
+
+            response.getWriter().append(DAIRYINFO_SEARCH_PAGE_A_P);
+            response.getWriter().append(RETURN_BACK_A_P);
 
         }
 

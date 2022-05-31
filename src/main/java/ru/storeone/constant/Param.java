@@ -14,9 +14,19 @@ public class Param {
 
     public static final String SEARCH_OUTPUT_OTHER = "style=font-size:20px;color:dark";
 
-    public static final String RETURN_BACK_A_P = "<p><a href=\"./\">Return back</a></p>";
+    public static final String RETURN_BACK_A_P = "<p style=font-size:25px;color:white><a href=\"./\">Return back</a></p>";
 
     public static final String TABLE_BEGIN = "<table style=\"width:100%\">\n";
 
     public static final String ADD_TO_BASKET_A_P = "<p><a href=\"./addToBasket?name=\">Add to basket</a></p>";
+
+    public static final String BAKERY_JSP_SEARCH_PAGE_A_P = "<p style=font-size:25px;color:white><a href=\"./searchBakery.jsp\">Search page</a></p>";
+
+    public static final String VIEW_PRODUCTS_P = "<p style=font-size:25px;color:white>View Products:</p>";
+
+    public static final String BEE_JSP_SEARCH_PAGE_A_P = "<p style=font-size:25px;color:white><a href=\"./searchBee.jsp\">Search page</a></p>";
+    public static final String CEREAL_JSP_SEARCH_PAGE_A_P = "<p style=font-size:25px;color:white><a href=\"./searchCereal.jsp\">Search page</a></p>";
+
+    public static final String DAIRYINFO_SEARCH_PAGE_A_P = "<p style=font-size:25px;color:white><a href=\"./dairyinfo>Search page</a></p>";
+
 }

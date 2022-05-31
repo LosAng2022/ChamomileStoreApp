@@ -138,7 +138,7 @@ public class SearchBakeryServlet extends HttpServlet {
 
         }
 
-        response.getWriter().append("<p><a href=\"./searchBakery.jsp\">Search page</a></p>");
+        response.getWriter().append(BAKERY_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
 
     }

@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static ru.storeone.constant.Param.ADD_TO_BASKET_A_P;
+import static ru.storeone.constant.Param.*;
 
 @WebServlet(urlPatterns = {"/beeinfo"})
 public class AllBeeProductsServlet extends HttpServlet {
@@ -17,8 +17,7 @@ public class AllBeeProductsServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     ProductService productService;
-
-    public static final String TABLE_BEGIN = "<table style=\" border: 1px solid white; border-collapse: collapse;\">\n" +
+    public static final String TABLE_BEGIN = "<table style=\"border: 1px solid white; border-collapse: collapse;\">\n" +
             "  <tr>\n" +
             "    <th>Product name</th>\n" +
             "    <th>Fat content of the product</th> \n" +
@@ -32,8 +31,8 @@ public class AllBeeProductsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
         response.setContentType("text/html;charset=utf-8");
-        response.getWriter().append("<html><head><link rel=\"stylesheet\" href=\"style.css\">\n</head><body>");
-        response.getWriter().append("<p>View Products:</p>");
+        response.getWriter().append(HTML_BODY_BEGIN);
+        response.getWriter().append(VIEW_PRODUCTS_P);
         response.getWriter().append(TABLE_BEGIN);
         for (int i=0; i < ProductService.allBeeP().size(); i++) {
             BeeProducts bP = ProductService.allBeeP().get(i);
@@ -49,8 +48,12 @@ public class AllBeeProductsServlet extends HttpServlet {
                     " </tr>");
         }
         response.getWriter().append(TABLE_END);
+        response.getWriter().append(BEE_JSP_SEARCH_PAGE_A_P);
+        response.getWriter().append(RETURN_BACK_A_P);
+        response.getWriter().append(HTML_BODY_END);
 
-        response.getWriter().append("</body></html>");
+
+
     }
 
 }

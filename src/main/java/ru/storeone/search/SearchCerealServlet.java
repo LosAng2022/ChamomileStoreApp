@@ -139,7 +139,7 @@ public class SearchCerealServlet extends HttpServlet {
 
         }
 
-        response.getWriter().append("<p><a href=\"./searchCereal.jsp\">Search page</a></p>");
+        response.getWriter().append(CEREAL_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
 
     }

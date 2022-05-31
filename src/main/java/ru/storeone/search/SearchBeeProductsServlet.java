@@ -21,6 +21,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
     @Serial
     private static final long serialVersionUID = 1L;
 
+
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
@@ -139,7 +140,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
 
         }
 
-        response.getWriter().append("<p><a href=\"./searchBee.jsp\">Search page</a></p>");
+        response.getWriter().append(BEE_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
 
     }
