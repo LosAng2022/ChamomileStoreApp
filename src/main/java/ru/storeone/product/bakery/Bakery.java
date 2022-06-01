@@ -2,8 +2,6 @@ package ru.storeone.product.bakery;
 
 import ru.storeone.product.Product;
 
-
-
 public class Bakery extends Product {
 
     private double caloricContent, weight;

@@ -1,5 +1,4 @@
 package ru.storeone.allproduct;
-
 import ru.storeone.product.bakery.Bakery;
 import ru.storeone.service.ProductService;
 
@@ -28,13 +27,27 @@ public class AllBakeryServlet extends HttpServlet {
     public static final String TABLE_END = "</table>";
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-        response.setContentType("text/html;charset=utf-8");
-        response.getWriter().append(HTML_BODY_BEGIN);
-        response.getWriter().append(VIEW_PRODUCTS_P);
-        response.getWriter().append(TABLE_BEGIN);
+
         for (int i=0; i < ProductService.allBakery().size(); i++) {
             Bakery bK = ProductService.allBakery().get(i);
-            request.setCharacterEncoding("UTF-8");
+
+            request.setAttribute("Name", bK.getName());
+            request.setAttribute("CaloricContent", bK.getCaloricContent());
+            request.setAttribute("Weight", bK.getWeight());
+            request.setAttribute("Manufacturer", bK.getManufacturer());
+            request.setAttribute("name", bK.getName());
+            request.setAttribute("name", bK.getName());
+
+    }}}
+
+
+        /*response.getWriter().append(HTML_BODY_BEGIN);
+        response.getWriter().append(VIEW_PRODUCTS_P);
+        response.getWriter().append(TABLE_BEGIN);
+
+        for (int i=0; i < ProductService.allBakery().size(); i++) {
+            Bakery bK = ProductService.allBakery().get(i);
+
             response.getWriter().append("<tr>\n" +
                     "    <td>" + bK.getName() + "</td>\n" +
                     "    <td>" + bK.getCaloricContent() + "</td> \n" +
@@ -55,3 +68,4 @@ public class AllBakeryServlet extends HttpServlet {
 
 
 }
+*/
