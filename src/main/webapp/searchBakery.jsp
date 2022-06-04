@@ -28,13 +28,12 @@
     </form>
 
 <div>
-    <p><a style="font-size:20px; color: goldenrod; margin: 50px;" href="allproduct/allbakery.jsp">Просмотр всей выпечки</a></p>
+    <p><a style="font-size:20px; color: goldenrod; margin: 50px;" href="./bakeryinfo">Просмотр всей выпечки</a></p>
 </div>
 
 <div>
     <p><a style="font-size:20px; color: darkblue; margin: 50px;" href="./">Вернуться на главную</a></p>
 </div>
-
 
 </body>
 </html>

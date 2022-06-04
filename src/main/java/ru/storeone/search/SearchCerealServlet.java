@@ -45,7 +45,7 @@ public class SearchCerealServlet extends HttpServlet {
 
             if (Objects.equals(productName, foundCereal.getName())) {
 
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundCereal.getName() + "</td>\n" +
                         "    <td>" + foundCereal.getCaloricContent() + "</td>\n" +
@@ -56,11 +56,10 @@ public class SearchCerealServlet extends HttpServlet {
                         "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
-
             }
             if (Objects.equals(productManufacturer, foundCereal.getManufacturer())) {
 
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundCereal.getName() + "</td>\n" +
                         "    <td>" + foundCereal.getCaloricContent() + "</td>\n" +
@@ -74,7 +73,7 @@ public class SearchCerealServlet extends HttpServlet {
             }
             if (Objects.equals(productCountryOfOrigin, foundCereal.getCountryOfOrigin())) {
 
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundCereal.getName() + "</td>\n" +
                         "    <td>" + foundCereal.getCaloricContent() + "</td>\n" +
@@ -89,7 +88,7 @@ public class SearchCerealServlet extends HttpServlet {
             double cC = foundCereal.getCaloricContent();
             String calorie = Double.toString(cC);
             if (Objects.equals(productCaloricContent, calorie)) {
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundCereal.getName() + "</td>\n" +
                         "    <td>" + foundCereal.getCaloricContent() + "</td>\n" +
@@ -100,12 +99,11 @@ public class SearchCerealServlet extends HttpServlet {
                         "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
-
             }
             double wG = foundCereal.getWeight();
             String weight = Double.toString(wG);
             if (Objects.equals(productWeight, weight)) {
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundCereal.getName() + "</td>\n" +
                         "    <td>" + foundCereal.getCaloricContent() + "</td>\n" +
@@ -121,7 +119,7 @@ public class SearchCerealServlet extends HttpServlet {
             double pR = foundCereal.getPrice();
             String price = Double.toString(pR);
             if (Objects.equals(productPrice, price)) {
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundCereal.getName() + "</td>\n" +
                         "    <td>" + foundCereal.getCaloricContent() + "</td>\n" +

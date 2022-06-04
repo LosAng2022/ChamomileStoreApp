@@ -17,7 +17,7 @@ public class AllBeeProductsServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     ProductService productService;
-    public static final String TABLE_BEGIN = "<table style=\"border: 1px solid white; border-collapse: collapse;\">\n" +
+    public static final String TABLE_BEGIN = "<table style=\"style.css\">\n" +
             "  <tr>\n" +
             "    <th>Product name</th>\n" +
             "    <th>Fat content of the product</th> \n" +
@@ -25,6 +25,7 @@ public class AllBeeProductsServlet extends HttpServlet {
             "    <th>Product manufacturer</th>\n" +
             "    <th>Country of origin</th>\n" +
             "    <th>Product price</th>\n" +
+            "    <th>Choice</th>\n" +
             "  </tr>";
     public static final String TABLE_END = "</table>";
 

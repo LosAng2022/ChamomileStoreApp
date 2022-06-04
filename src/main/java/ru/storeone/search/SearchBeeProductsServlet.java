@@ -46,7 +46,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
 
             if (Objects.equals(productName, foundBee.getName())) {
 
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundBee.getName() + "</td>\n" +
                         "    <td>" + foundBee.getCaloricContent() + "</td>\n" +
@@ -61,7 +61,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
             }
             if (Objects.equals(productManufacturer, foundBee.getManufacturer())) {
 
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundBee.getName() + "</td>\n" +
                         "    <td>" + foundBee.getCaloricContent() + "</td>\n" +
@@ -75,7 +75,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
             }
             if (Objects.equals(productCountryOfOrigin, foundBee.getCountryOfOrigin())) {
 
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundBee.getName() + "</td>\n" +
                         "    <td>" + foundBee.getCaloricContent() + "</td>\n" +
@@ -90,7 +90,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
             double cC = foundBee.getCaloricContent();
             String calorie = Double.toString(cC);
             if (Objects.equals(productCaloricContent, calorie)) {
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundBee.getName() + "</td>\n" +
                         "    <td>" + foundBee.getCaloricContent() + "</td>\n" +
@@ -101,12 +101,11 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
-
             }
             double wG = foundBee.getWeight();
             String weight = Double.toString(wG);
             if (Objects.equals(productWeight, weight)) {
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundBee.getName() + "</td>\n" +
                         "    <td>" + foundBee.getCaloricContent() + "</td>\n" +
@@ -117,12 +116,11 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
-
             }
             double pR = foundBee.getPrice();
             String price = Double.toString(pR);
             if (Objects.equals(productPrice, price)) {
-                response.getWriter().append(TABLE_BEGIN +
+                response.getWriter().append(SEARCH_TABLE_STYLE +
                         "  <tr>\n" +
                         "    <td>" + foundBee.getName() + "</td>\n" +
                         "    <td>" + foundBee.getCaloricContent() + "</td>\n" +
@@ -133,7 +131,6 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
-
             }
 
             response.getWriter().append(HTML_BODY_END);

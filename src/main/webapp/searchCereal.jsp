@@ -29,7 +29,7 @@
 </form>
 
 <div>
-    <p><a href="./cerealinfo">Просмотр всей крупы</a></p>
+    <p><a style="font-size:20px; color: goldenrod; margin: 50px;" href="./cerealinfo">Просмотр всей крупы</a></p>
 </div>
 
 <div>

@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Продукты пчеловодства</title>
-
 </head>
 <body>
 <link rel="stylesheet" href="style.css">
@@ -30,13 +29,12 @@
 </form>
 
 <div>
-    <p><a href="./beeinfo">Просмотр всех продуктов пчеловодства</a>  </p>
+    <p><a style="font-size:20px; color: goldenrod; margin: 50px;" href="./beeinfo">Просмотр всех продуктов пчеловодства</a>  </p>
 </div>
 
 <div>
     <p><a style="font-size:20px; color: darkblue; margin: 50px;" href="./">Вернуться на главную</a></p>
 </div>
-
 
 </body>
 </html>

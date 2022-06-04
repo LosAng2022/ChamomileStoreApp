@@ -1,18 +1,22 @@
 body {
-    background-image: url("marguerite-729510.jpg");
+    background-image: url("/marguerite-729510.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     margin-right: 200px;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
 table, th, td {
-    border: 1px solid white;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    color: black;
     border-collapse: collapse;
 }
-
 th, td {
-    background-color: #96D4D4;
+    background-color: azure;
+    font: bold 18px/1.2em Arial, Helvetica, sans-serif;
 }
 
 

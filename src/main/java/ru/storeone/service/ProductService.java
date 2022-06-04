@@ -56,7 +56,7 @@ public class ProductService {
 
     }
 
-    public static synchronized ArrayList<Bakery> allBakery() {
+    public static ArrayList<Bakery> allBakery() {
         ArrayList<Bakery> bakeryArrayList = new ArrayList();
         Bread bread = new Bread("Bread",265.0,1.0,"BreadFactoryA","Russia",75.90);
         Bread bread1 = new Bread("Bread",275.0,1.0,"BreadFactoryA","Russia",80.0);

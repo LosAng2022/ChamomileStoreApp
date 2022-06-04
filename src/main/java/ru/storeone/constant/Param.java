@@ -18,9 +18,13 @@ public class Param {
 
     public static final String TABLE_BEGIN = "<table style=\"width:100%\">\n";
 
-    public static final String ADD_TO_BASKET_A_P = "<p><a href=\"./addToBasket?name=\">Add to basket</a></p>";
+    public static final String SEARCH_TABLE_STYLE = "<table style=\"width:100%\"style.css>\n";
+
+    public static final String ADD_TO_BASKET_A_P = "<p ><a style=color:red href=\"./addToBasket?name=\">Add to basket</a></p>";
 
     public static final String BAKERY_JSP_SEARCH_PAGE_A_P = "<p style=font-size:25px;color:white><a href=\"./searchBakery.jsp\">Search page</a></p>";
+
+    public static final String DAIRY_JSP_SEARCH_PAGE_A_P = "<p style=font-size:25px;color:white><a href=\"./searchDairy.jsp\">Search page</a></p>";
 
     public static final String VIEW_PRODUCTS_P = "<p style=font-size:25px;color:white>View Products:</p>";
 
@@ -28,5 +32,9 @@ public class Param {
     public static final String CEREAL_JSP_SEARCH_PAGE_A_P = "<p style=font-size:25px;color:white><a href=\"./searchCereal.jsp\">Search page</a></p>";
 
     public static final String DAIRYINFO_SEARCH_PAGE_A_P = "<p style=font-size:25px;color:white><a href=\"./dairyinfo>Search page</a></p>";
+
+    public static final String FAT_CONTENT = "fatContent";
+    public static final String VOLUME = "volume";
+
 
 }
