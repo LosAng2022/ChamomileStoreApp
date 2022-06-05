@@ -132,6 +132,7 @@ public class SearchDairyServlet extends HttpServlet {
 
         }
 
+        response.getWriter().append(ALL_DAIRY);
         response.getWriter().append(DAIRY_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
 

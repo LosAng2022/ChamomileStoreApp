@@ -47,11 +47,12 @@ public class AllBakeryServlet extends HttpServlet {
                     "    <td>" + bK.getManufacturer() + "</td>\n" +
                     "    <td>" + bK.getCountryOfOrigin() + "</td>\n" +
                     "    <td>" + bK.getPrice() + "</td>\n" +
-                    "    <td>" + "<p ><a style=color:red href=\"./addToBasket?name=" + bK.getName() + "\">Add to basket</a></p>" +
+                    "    <td>" + "<p ><a style=color:red href=\"./addToBasketBakery?name=" + bK.getName() + "\">Add to basket</a></p>" +
                     "</td>\n" +
                     " </tr>");
         }
         response.getWriter().append(TABLE_END);
+
         response.getWriter().append(BAKERY_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
         response.getWriter().append(HTML_BODY_END);

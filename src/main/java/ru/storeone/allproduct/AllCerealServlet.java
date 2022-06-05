@@ -16,6 +16,7 @@ public class AllCerealServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
+
     ProductService productService;
     public static final String TABLE_BEGIN = "<table style=\"style.css\">\n" +
             "  <tr>\n" +
@@ -45,10 +46,12 @@ public class AllCerealServlet extends HttpServlet {
                     "    <td>" + cR.getManufacturer() + "</td>\n" +
                     "    <td>" + cR.getCountryOfOrigin() + "</td>\n" +
                     "    <td>" + cR.getPrice() + "</td>\n" +
-                    "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                    "    <td>" + "<p ><a style=color:red href=\"./addToBasketCereal?name=" + cR.getName() + "\">Add to basket</a></p>" +
+                    "</td>\n" +
                     " </tr>");
         }
         response.getWriter().append(TABLE_END);
+
         response.getWriter().append(CEREAL_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
         response.getWriter().append(HTML_BODY_END);

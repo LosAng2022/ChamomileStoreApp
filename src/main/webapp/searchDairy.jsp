@@ -28,7 +28,7 @@
 </form>
 
 <div>
-  <p><a style="font-size:20px; color: goldenrod; margin: 50px;" href="./dairyinfo">Просмотр всей выпечки</a></p>
+  <p><a style="font-size:20px; color: goldenrod; margin: 50px;" href="./dairyinfo">Просмотр всех молочных продуктов</a></p>
 </div>
 
 <div>

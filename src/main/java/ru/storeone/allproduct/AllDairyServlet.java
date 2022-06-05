@@ -16,6 +16,7 @@ public class AllDairyServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
+
     ProductService productService;
     public static final String TABLE_BEGIN = "<table style=\"style.css\">\n" +
             "  <tr>\n" +
@@ -46,10 +47,12 @@ public class AllDairyServlet extends HttpServlet {
                     "    <td>" + dP.getManufacturer() + "</td>\n" +
                     "    <td>" + dP.getCountryOfOrigin() + "</td>\n" +
                     "    <td>" + dP.getPrice() + "</td>\n" +
-                    "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                    "    <td>" + "<p ><a style=color:red href=\"./addToBasketDairy?name=" + dP.getName() + "\">Add to basket</a></p>" +
+                    "</td>\n" +
                     " </tr>");
         }
         response.getWriter().append(TABLE_END);
+
         response.getWriter().append(DAIRY_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
         response.getWriter().append(HTML_BODY_END);

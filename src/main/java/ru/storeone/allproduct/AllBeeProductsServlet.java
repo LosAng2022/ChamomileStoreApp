@@ -45,14 +45,15 @@ public class AllBeeProductsServlet extends HttpServlet {
                     "    <td>" + bP.getManufacturer() + "</td>\n" +
                     "    <td>" + bP.getCountryOfOrigin() + "</td>\n" +
                     "    <td>" + bP.getPrice() + "</td>\n" +
-                    "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                    "    <td>" + "<p ><a style=color:red href=\"./addToBasketBee?name=" + bP.getName() + "\">Add to basket</a></p>" +
+                    "</td>\n" +
                     " </tr>");
         }
         response.getWriter().append(TABLE_END);
+
         response.getWriter().append(BEE_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
         response.getWriter().append(HTML_BODY_END);
-
 
 
     }

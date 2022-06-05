@@ -16,15 +16,7 @@ import static ru.storeone.constant.Param.*;
 @WebServlet(urlPatterns = "/viewBasket")
 public class ViewBasketProductServlet extends HttpServlet {
 
-    public static final String TABLE_BEGIN = "<table style=\"style.css\">\n" +
-            "  <tr>\n" +
-            "    <th>Product name</th>\n" +
-            "    <th>Product manufacturer</th>\n" +
-            "    <th>Country of origin</th>\n" +
-            "    <th>Product price</th>\n" +
-            "    <th>Choice</th>\n" +
-            "  </tr>";
-    public static final String TABLE_END = "</table>";
+
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
@@ -34,10 +26,10 @@ public class ViewBasketProductServlet extends HttpServlet {
 
         List<Product> myBasket = (List<Product>)httpSession.getAttribute("myBasket");
 
-        if (myBasket!=null && myBasket.size() != 0) {
-            response.getWriter().append("<p>View basket:</p>");
+        if (myBasket != null && myBasket.size() != 0) {
+            response.getWriter().append(VIEW_BASKET_P);
 
-            for (int i=0; i < myBasket.size(); i++) {
+            for (int i = 0; i < myBasket.size(); i++) {
                 Product p = myBasket.get(i);
 
                 response.getWriter().append(SEARCH_TABLE_STYLE +
@@ -46,15 +38,13 @@ public class ViewBasketProductServlet extends HttpServlet {
                         "    <td>" + p.getManufacturer() + "</td>\n" +
                         "    <td>" + p.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + p.getPrice() + "</td>\n" +
-                        "  </tr>\n" +
-                        "</table>");
-
+                        "  </tr>\n" + "</table>");
             }
 
         } else {
-            response.getWriter().append("<p>Our basket is Empty!</p>");
+            response.getWriter().append("<p style=font-size:25px;color:white>Our basket is Empty!</p>");
         }
-
+        response.getWriter().append(RETURN_BACK_A_P);
         response.getWriter().append(HTML_BODY_END);
     }
 }

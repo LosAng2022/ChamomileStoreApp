@@ -137,6 +137,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
 
         }
 
+        response.getWriter().append(All_BEE);
         response.getWriter().append(BEE_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
 
