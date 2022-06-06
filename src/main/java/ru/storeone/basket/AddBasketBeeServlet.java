@@ -18,7 +18,7 @@ import java.util.Objects;
 import static ru.storeone.constant.Param.*;
 
 @WebServlet(urlPatterns = "/addToBasketBee")
-public class AddBeeProductServlet extends HttpServlet {
+public class AddBasketBeeServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 

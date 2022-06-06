@@ -38,6 +38,7 @@ public class ViewBasketProductServlet extends HttpServlet {
                         "    <td>" + p.getManufacturer() + "</td>\n" +
                         "    <td>" + p.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + p.getPrice() + "</td>\n" +
+                        "    <td>" + "<p><a style=color:red href= \"./remove?id=" + i + "\">Remove</a></td>\n" + "</td>\n" +
                         "  </tr>\n" + "</table>");
             }
 

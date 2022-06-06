@@ -46,7 +46,7 @@ public class AllCerealServlet extends HttpServlet {
                     "    <td>" + cR.getManufacturer() + "</td>\n" +
                     "    <td>" + cR.getCountryOfOrigin() + "</td>\n" +
                     "    <td>" + cR.getPrice() + "</td>\n" +
-                    "    <td>" + "<p ><a style=color:red href=\"./addToBasketCereal?name=" + cR.getName() + "\">Add to basket</a></p>" +
+                    "    <td>" + "<p><a style=color:green href=\"./addToBasketCereal?name=" + cR.getName() + "\">Add to basket</a></p>" +
                     "</td>\n" +
                     " </tr>");
         }

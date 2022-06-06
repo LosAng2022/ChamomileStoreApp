@@ -47,7 +47,7 @@ public class AllDairyServlet extends HttpServlet {
                     "    <td>" + dP.getManufacturer() + "</td>\n" +
                     "    <td>" + dP.getCountryOfOrigin() + "</td>\n" +
                     "    <td>" + dP.getPrice() + "</td>\n" +
-                    "    <td>" + "<p ><a style=color:red href=\"./addToBasketDairy?name=" + dP.getName() + "\">Add to basket</a></p>" +
+                    "    <td>" + "<p><a style=color:green href=\"./addToBasketDairy?name=" + dP.getName() + "\">Add to basket</a></p>" +
                     "</td>\n" +
                     " </tr>");
         }

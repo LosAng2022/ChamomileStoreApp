@@ -19,17 +19,6 @@ public class SearchBakeryServlet extends HttpServlet {
 
     @Serial
     private static final long serialVersionUID = 1L;
-    public static final String TABLE_BEGIN = "<table style=\"style.css\">\n" +
-            "  <tr>\n" +
-            "    <th>Product name</th>\n" +
-            "    <th>Fat content of the product</th> \n" +
-            "    <th>Product weight</th>\n" +
-            "    <th>Product manufacturer</th>\n" +
-            "    <th>Country of origin</th>\n" +
-            "    <th>Product price</th>\n" +
-            "    <th>Choice</th>\n" +
-            "  </tr>";
-    public static final String TABLE_END = "</table>";
 
     @Override
     public void init(ServletConfig config) throws ServletException {
@@ -45,13 +34,9 @@ public class SearchBakeryServlet extends HttpServlet {
         String productWeight = request.getParameter(WEIGHT);
         String productPrice = request.getParameter(PRICE);
 
-
-
         response.getWriter().append(HTML_BODY_BEGIN);
         for (int i = 0; i < ProductService.allBakery().size(); i++) {
             Bakery foundBakery = ProductService.allBakery().get(i);
-
-
 
             if (Objects.equals(productName, foundBakery.getName())) {
 
@@ -63,7 +48,7 @@ public class SearchBakeryServlet extends HttpServlet {
                         "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBakery.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBakery?name=" + foundBakery.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
 
@@ -79,7 +64,7 @@ public class SearchBakeryServlet extends HttpServlet {
                         "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBakery.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBakery?name=" + foundBakery.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -93,7 +78,7 @@ public class SearchBakeryServlet extends HttpServlet {
                         "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBakery.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBakery?name=" + foundBakery.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -108,7 +93,7 @@ public class SearchBakeryServlet extends HttpServlet {
                         "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBakery.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBakery?name=" + foundBakery.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -123,7 +108,7 @@ public class SearchBakeryServlet extends HttpServlet {
                         "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBakery.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBakery?name=" + foundBakery.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -138,7 +123,7 @@ public class SearchBakeryServlet extends HttpServlet {
                         "    <td>" + foundBakery.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBakery.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBakery.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBakery?name=" + foundBakery.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }

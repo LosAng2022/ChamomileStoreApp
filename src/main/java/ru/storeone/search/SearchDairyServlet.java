@@ -49,7 +49,7 @@ public class SearchDairyServlet extends HttpServlet {
                         "    <td>" + foundDairy.getManufacturer() + "</td>\n" +
                         "    <td>" + foundDairy.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundDairy.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketDairy?name=" + foundDairy.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
 
@@ -64,7 +64,7 @@ public class SearchDairyServlet extends HttpServlet {
                         "    <td>" + foundDairy.getManufacturer() + "</td>\n" +
                         "    <td>" + foundDairy.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundDairy.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketDairy?name=" + foundDairy.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -78,7 +78,7 @@ public class SearchDairyServlet extends HttpServlet {
                         "    <td>" + foundDairy.getManufacturer() + "</td>\n" +
                         "    <td>" + foundDairy.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundDairy.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketDairy?name=" + foundDairy.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -93,7 +93,7 @@ public class SearchDairyServlet extends HttpServlet {
                         "    <td>" + foundDairy.getManufacturer() + "</td>\n" +
                         "    <td>" + foundDairy.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundDairy.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketDairy?name=" + foundDairy.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -108,7 +108,7 @@ public class SearchDairyServlet extends HttpServlet {
                         "    <td>" + foundDairy.getManufacturer() + "</td>\n" +
                         "    <td>" + foundDairy.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundDairy.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketDairy?name=" + foundDairy.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -123,7 +123,7 @@ public class SearchDairyServlet extends HttpServlet {
                         "    <td>" + foundDairy.getManufacturer() + "</td>\n" +
                         "    <td>" + foundDairy.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundDairy.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketDairy?name=" + foundDairy.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }

@@ -36,9 +36,6 @@ public class SearchBeeProductsServlet extends HttpServlet {
         String productWeight = request.getParameter(WEIGHT);
         String productPrice = request.getParameter(PRICE);
 
-        request.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html;charset=windows-1251");
-
         for (int i = 0; i < ProductService.allBeeP().size(); i++) {
             BeeProducts foundBee = ProductService.allBeeP().get(i);
 
@@ -54,7 +51,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + foundBee.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBee.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBee.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBee?name=" + foundBee.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
 
@@ -69,7 +66,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + foundBee.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBee.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBee.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBee?name=" + foundBee.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -83,7 +80,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + foundBee.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBee.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBee.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBee?name=" + foundBee.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -98,7 +95,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + foundBee.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBee.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBee.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBee?name=" + foundBee.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -113,7 +110,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + foundBee.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBee.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBee.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBee?name=" + foundBee.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -128,7 +125,7 @@ public class SearchBeeProductsServlet extends HttpServlet {
                         "    <td>" + foundBee.getManufacturer() + "</td>\n" +
                         "    <td>" + foundBee.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundBee.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketBee?name=" + foundBee.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }

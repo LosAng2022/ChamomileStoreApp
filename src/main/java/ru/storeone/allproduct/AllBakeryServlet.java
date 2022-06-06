@@ -47,7 +47,7 @@ public class AllBakeryServlet extends HttpServlet {
                     "    <td>" + bK.getManufacturer() + "</td>\n" +
                     "    <td>" + bK.getCountryOfOrigin() + "</td>\n" +
                     "    <td>" + bK.getPrice() + "</td>\n" +
-                    "    <td>" + "<p ><a style=color:red href=\"./addToBasketBakery?name=" + bK.getName() + "\">Add to basket</a></p>" +
+                    "    <td>" + "<p><a style=color:green href=\"./addToBasketBakery?name=" + bK.getName() + "\">Add to basket</a></p>" +
                     "</td>\n" +
                     " </tr>");
         }

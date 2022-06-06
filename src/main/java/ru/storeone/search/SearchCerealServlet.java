@@ -35,9 +35,6 @@ public class SearchCerealServlet extends HttpServlet {
         String productWeight = request.getParameter(WEIGHT);
         String productPrice = request.getParameter(PRICE);
 
-        request.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html;charset=windows-1251");
-
         for (int i = 0; i < ProductService.allCereal().size(); i++) {
             Cereal foundCereal = ProductService.allCereal().get(i);
 
@@ -53,7 +50,7 @@ public class SearchCerealServlet extends HttpServlet {
                         "    <td>" + foundCereal.getManufacturer() + "</td>\n" +
                         "    <td>" + foundCereal.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundCereal.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketCereal?name=" + foundCereal.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -67,7 +64,7 @@ public class SearchCerealServlet extends HttpServlet {
                         "    <td>" + foundCereal.getManufacturer() + "</td>\n" +
                         "    <td>" + foundCereal.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundCereal.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketCereal?name=" + foundCereal.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -81,7 +78,7 @@ public class SearchCerealServlet extends HttpServlet {
                         "    <td>" + foundCereal.getManufacturer() + "</td>\n" +
                         "    <td>" + foundCereal.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundCereal.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketCereal?name=" + foundCereal.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -96,7 +93,7 @@ public class SearchCerealServlet extends HttpServlet {
                         "    <td>" + foundCereal.getManufacturer() + "</td>\n" +
                         "    <td>" + foundCereal.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundCereal.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketCereal?name=" + foundCereal.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
             }
@@ -111,7 +108,7 @@ public class SearchCerealServlet extends HttpServlet {
                         "    <td>" + foundCereal.getManufacturer() + "</td>\n" +
                         "    <td>" + foundCereal.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundCereal.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketCereal?name=" + foundCereal.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
 
@@ -127,7 +124,7 @@ public class SearchCerealServlet extends HttpServlet {
                         "    <td>" + foundCereal.getManufacturer() + "</td>\n" +
                         "    <td>" + foundCereal.getCountryOfOrigin() + "</td>\n" +
                         "    <td>" + foundCereal.getPrice() + "</td>\n" +
-                        "    <td>" + ADD_TO_BASKET_A_P + "</td>\n" +
+                        "    <td>" + "<p><a style=color:green href=\"./addToBasketCereal?name=" + foundCereal.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
 
