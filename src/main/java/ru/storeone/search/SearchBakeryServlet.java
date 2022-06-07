@@ -13,6 +13,7 @@ import java.io.Serial;
 import java.util.Objects;
 
 import static ru.storeone.constant.Param.*;
+import static ru.storeone.service.ProductService.add;
 
 @WebServlet(urlPatterns = {"/searchbakery"})
 public class SearchBakeryServlet extends HttpServlet {
@@ -135,7 +136,31 @@ public class SearchBakeryServlet extends HttpServlet {
         response.getWriter().append(BAKERY_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(ALL_BAKERY);
         response.getWriter().append(RETURN_BACK_A_P);
+        response.getWriter().append(WELCOME_PAGE);
 
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
+
+        String pName = request.getParameter(NAME);
+        String pCaloricContent = request.getParameter(CALORIC_CONTENT);
+        String pWeight = request.getParameter(WEIGHT);
+        String pManufacturer = request.getParameter(MANUFACTURER);
+        String pCountryOfOrigin = request.getParameter(COUNTRY_OF_ORIGIN);
+        String pPrice = request.getParameter(PRICE);
+
+        Bakery bakery = new Bakery(pName,Double.valueOf(pCaloricContent),Double.valueOf(pWeight),
+                pManufacturer,pCountryOfOrigin,Double.valueOf(pPrice));
+       add(bakery);
+
+
+        response.getWriter().append(HTML_BODY_BEGIN);
+        response.getWriter().append("<p style=\"font-size:20px; color: goldenrod; margin: 15px;\">New product added!</p>");
+        response.getWriter().append(BAKERY_JSP_SEARCH_PAGE_A_P);
+        response.getWriter().append(RETURN_BACK_A_P);
+        response.getWriter().append(WELCOME_PAGE);
+        response.getWriter().append(HTML_BODY_END);
     }
 
 }

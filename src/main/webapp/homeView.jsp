@@ -8,7 +8,11 @@
 <body>
 <link rel="stylesheet" href="style.css">
 
-<h1 align="center" style="font-size:60px; margin: 20px; color:orange;"><sub style="font-size:20px; color:white;">
+<jsp:include page="_menu.jsp"></jsp:include>
+
+<b><br></b>
+
+<h1 align="center" style="font-size:70px; margin: 20px; color:orange;"><sub style="font-size:20px; color:white;">
   Интернет-Магазин</sub>Ромашка<sub style="font-size:20px; color:white;">Интернет-Магазин</sub></h1>
 <p align="center" style="font-size:30px; color:green;">Вкусные и натуральные продукты со всей России!<b></b></p>
 <p style="font-size:20px; margin: 30px; color:white;"><i>Представляем каталог товаров!</i></p>
@@ -21,15 +25,15 @@
   <li><p><a href="/searchCereal.jsp" style="font-size:25px; color:orange;">Крупы - для вкусной каши</a>  </p></li>
 </ul>
 
-<div>
-  <br>
-  <p><a style="font-size:25px; margin: 40px; color:white;" href="./viewBasket">Просмотр корзины</a></p>
-</div>
 
 <div>
   <br>
   <p><a style="font-size:25px; margin: 40px; color:white;" href="/сontact.jsp">Контактная информация</a></p>
 </div>
 
+<div>
+  <br>
+  <p><a style="font-size:25px; margin: 40px; color:white;" href="/сontact.jsp">Доставка</a></p>
+</div>
 </body>
 </html>

@@ -46,6 +46,7 @@ public class ViewBasketProductServlet extends HttpServlet {
             response.getWriter().append("<p style=font-size:25px;color:white>Our basket is Empty!</p>");
         }
         response.getWriter().append(RETURN_BACK_A_P);
+        response.getWriter().append(WELCOME_PAGE);
         response.getWriter().append(HTML_BODY_END);
     }
 }

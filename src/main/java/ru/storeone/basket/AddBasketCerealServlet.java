@@ -63,6 +63,7 @@ public class AddBasketCerealServlet extends HttpServlet {
         response.getWriter().append(ALL_CEREAL);
         response.getWriter().append(CEREAL_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
+        response.getWriter().append(WELCOME_PAGE);
         response.getWriter().append(HTML_BODY_END);
 
     }

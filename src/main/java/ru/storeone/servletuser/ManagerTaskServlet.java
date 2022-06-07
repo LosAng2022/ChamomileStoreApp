@@ -21,7 +21,7 @@ public class ManagerTaskServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/managerTaskView.jsp");
+        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/managementPageView.jsp");
         dispatcher.forward(request, response);
 
     }

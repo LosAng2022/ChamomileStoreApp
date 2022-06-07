@@ -17,13 +17,13 @@ public class DataDAO {
 
     private static void initUsers() {
 
-        // This user has a role as EMPLOYEE.
-        UserAccount emp = new UserAccount("buyer", "123", UserAccount.GENDER_MALE, //
-                SecurityConfig.ROLE_BUYER);
+        // This user has a role as CUSTOMER.
+        UserAccount emp = new UserAccount("customer", "123", UserAccount.GENDER_MALE, //
+                SecurityConfig.ROLE_CUSTOMER);
 
-        // This user has 2 roles EMPLOYEE and MANAGER.
+        // This user has 2 roles CUSTOMER and MANAGER.
         UserAccount mng = new UserAccount("manager", "124", UserAccount.GENDER_MALE, //
-                SecurityConfig.ROLE_BUYER, SecurityConfig.ROLE_MANAGER);
+                SecurityConfig.ROLE_CUSTOMER, SecurityConfig.ROLE_MANAGER);
 
         mapUsers.put(emp.getUserName(), emp);
         mapUsers.put(mng.getUserName(), mng);

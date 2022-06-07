@@ -54,6 +54,7 @@ public class AllCerealServlet extends HttpServlet {
 
         response.getWriter().append(CEREAL_JSP_SEARCH_PAGE_A_P);
         response.getWriter().append(RETURN_BACK_A_P);
+        response.getWriter().append(WELCOME_PAGE);
         response.getWriter().append(HTML_BODY_END);
     }
 

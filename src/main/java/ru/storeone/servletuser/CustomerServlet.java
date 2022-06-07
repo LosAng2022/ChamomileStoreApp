@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/viewbasket")
-public class ViewBasketProduct extends HttpServlet {
+@WebServlet("/customer")
+public class CustomerServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    public ViewBasketProduct() {
+    public CustomerServlet() {
         super();
     }
 
@@ -22,7 +22,7 @@ public class ViewBasketProduct extends HttpServlet {
 
 
 
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/basketView.jsp");
+        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/customerPageView.jsp");
         dispatcher.forward(request, response);
 
     }

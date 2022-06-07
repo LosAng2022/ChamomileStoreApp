@@ -14,7 +14,10 @@ public class Param {
 
     public static final String SEARCH_OUTPUT_OTHER = "style=font-size:20px;color:dark";
 
-    public static final String RETURN_BACK_A_P = "<p><a style=font-size:25px;color:white href=\"./\">Return back</a></p>";
+    public static final String RETURN_BACK_A_P = "<p><a style=font-size:25px;color:white href=\"./homeView.jsp\">HOME</a></p>";
+
+    public static final String WELCOME_PAGE = "<p><a style=font-size:25px;color:white href=\"./\">Welcome page</a></p>";
+
 
     public static final String TABLE_BEGIN = "<table style=\"width:100%\">\n";
 

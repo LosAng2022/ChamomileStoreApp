@@ -54,6 +54,6 @@ public class UrlPatternUtils {
                 return urlPattern;
             }
         }
-        return "/home"; // "/"
+        return "/home";
     }
 }

@@ -44,15 +44,20 @@ public class ProductService {
         Bread bread3 = new Bread("Baguette",275.0,0.5,"BreadFactoryB","Russia",85.0);
         Bread bread4 = new Bread("Ciabatta",280.0,0.5,"BreadFactoryB","Russia",90.0);
         Bread bread5 = new Bread("Corn tortilla",285.0,0.5,"BreadFactoryB","Russia",95.0);
-        bakeryArrayList.add(bread);
-        bakeryArrayList.add(bread1);
-        bakeryArrayList.add(bread2);
-        bakeryArrayList.add(bread3);
-        bakeryArrayList.add(bread4);
-        bakeryArrayList.add(bread5);
-        return bakeryArrayList;
+            bakeryArrayList.add(bread);
+            bakeryArrayList.add(bread1);
+            bakeryArrayList.add(bread2);
+            bakeryArrayList.add(bread3);
+            bakeryArrayList.add(bread4);
+            bakeryArrayList.add(bread5);
+            return bakeryArrayList;
 
     }
+    public static void add(Bakery bakery) {
+       allBakery().add(1,bakery);
+
+    }
+
 
     public static ArrayList<Cereal> allCereal() {
         ArrayList<Cereal> cerealArrayList = new ArrayList();
@@ -88,4 +93,7 @@ public class ProductService {
         beeProductsArrayList.add(honey5);
         return beeProductsArrayList;
     }
+
+
+
 }

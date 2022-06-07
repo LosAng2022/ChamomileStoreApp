@@ -4,7 +4,7 @@ import java.util.*;
 
 public class SecurityConfig {
     public static final String ROLE_MANAGER = "MANAGER";
-    public static final String ROLE_BUYER = "BUYER";
+    public static final String ROLE_CUSTOMER = "CUSTOMER";
 
     // String: Role
     // List<String>: urlPatterns.
@@ -20,9 +20,10 @@ public class SecurityConfig {
         List<String> urlPatterns1 = new ArrayList<String>();
 
         urlPatterns1.add("/userInfo");
-        urlPatterns1.add("/viewbasket"); // /employeeTask
+        urlPatterns1.add("/customer");
+        urlPatterns1.add("/viewBasket");
 
-        mapConfig.put(ROLE_BUYER, urlPatterns1);
+        mapConfig.put(ROLE_CUSTOMER, urlPatterns1);
 
         // Конфигурация для роли "MANAGER".
         List<String> urlPatterns2 = new ArrayList<String>();

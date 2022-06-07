@@ -32,7 +32,11 @@
 </div>
 
 <div>
-  <p><a style="font-size:20px; color: darkblue; margin: 50px;" href="./">Вернуться на главную</a></p>
+  <p><a style="font-size:20px; color: darkblue; margin: 50px;" href="/homeView.jsp">Главная страница</a></p>
+</div>
+
+<div>
+  <p><a style="font-size:20px; color: darkblue; margin: 50px;" href="./">Страница приветствия</a></p>
 </div>
 
 
