@@ -12,6 +12,8 @@ import ru.storeone.product.dairy.Kefir;
 import ru.storeone.product.dairy.Milk;
 
 import java.util.ArrayList;
+import java.util.Map;
+
 public class ProductService {
 
     public static ArrayList<Dairy> allDP() {
@@ -52,12 +54,8 @@ public class ProductService {
             bakeryArrayList.add(bread5);
             return bakeryArrayList;
 
-    }
-    public static void add(Bakery bakery) {
-       allBakery().add(1,bakery);
 
     }
-
 
     public static ArrayList<Cereal> allCereal() {
         ArrayList<Cereal> cerealArrayList = new ArrayList();

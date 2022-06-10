@@ -16,15 +16,13 @@ import static ru.storeone.constant.Param.*;
 @WebServlet(urlPatterns = "/viewBasket")
 public class ViewBasketProductServlet extends HttpServlet {
 
-
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
 
         response.getWriter().append(HTML_BODY_BEGIN);
         HttpSession httpSession = request.getSession();
 
-        List<Product> myBasket = (List<Product>)httpSession.getAttribute("myBasket");
+        List<Product> myBasket = (List<Product>) httpSession.getAttribute("myBasket");
 
         if (myBasket != null && myBasket.size() != 0) {
             response.getWriter().append(VIEW_BASKET_P);
@@ -48,5 +46,5 @@ public class ViewBasketProductServlet extends HttpServlet {
         response.getWriter().append(RETURN_BACK_A_P);
         response.getWriter().append(WELCOME_PAGE);
         response.getWriter().append(HTML_BODY_END);
-    }
-}
+            }
+        }

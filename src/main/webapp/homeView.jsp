@@ -23,6 +23,7 @@
   <li><p><a href="/searchBakery.jsp" style="font-size:25px; color:orange;">Хлеб - всему голова</a></p></li>
   <li><p><a href="/searchBee.jsp" style="font-size:25px; color:orange;">Мёд от прямого поставщика - ПЧЁЛ</a></p></li>
   <li><p><a href="/searchCereal.jsp" style="font-size:25px; color:orange;">Крупы - для вкусной каши</a>  </p></li>
+
 </ul>
 
 

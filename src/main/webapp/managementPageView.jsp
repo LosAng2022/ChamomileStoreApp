@@ -11,7 +11,7 @@
 <h3 style="font-size:20px; margin: 20px; color:white;">Управление магазином</h3>
 
 <div>
-  <p><a style="font-size:20px; color:goldenrod; margin: 50px;" href="./productAdd.jsp">Форма добавления продуктов</a>  </p>
+  <p><a style="font-size:20px; color:goldenrod; margin: 50px;" href="./productAdd.jsp">Форма добавления продуктов</a></p>
 </div>
 
 

@@ -13,7 +13,6 @@ import java.io.Serial;
 import java.util.Objects;
 
 import static ru.storeone.constant.Param.*;
-import static ru.storeone.service.ProductService.add;
 
 @WebServlet(urlPatterns = {"/searchbakery"})
 public class SearchBakeryServlet extends HttpServlet {
@@ -26,6 +25,7 @@ public class SearchBakeryServlet extends HttpServlet {
         super.init(config);
         ProductService.allBakery();
     }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String productName = request.getParameter(NAME);
@@ -36,13 +36,14 @@ public class SearchBakeryServlet extends HttpServlet {
         String productPrice = request.getParameter(PRICE);
 
         response.getWriter().append(HTML_BODY_BEGIN);
+
         for (int i = 0; i < ProductService.allBakery().size(); i++) {
             Bakery foundBakery = ProductService.allBakery().get(i);
 
             if (Objects.equals(productName, foundBakery.getName())) {
 
                 response.getWriter().append(SEARCH_TABLE_STYLE +
-                        "<tr>\n"  +
+                        "<tr>\n" +
                         "    <td>" + foundBakery.getName() + "</td>\n" +
                         "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
                         "    <td>" + foundBakery.getWeight() + "</td>\n" +
@@ -58,7 +59,7 @@ public class SearchBakeryServlet extends HttpServlet {
             if (Objects.equals(productManufacturer, foundBakery.getManufacturer())) {
 
                 response.getWriter().append(SEARCH_TABLE_STYLE +
-                        "<tr>\n"  +
+                        "<tr>\n" +
                         "    <td>" + foundBakery.getName() + "</td>\n" +
                         "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
                         "    <td>" + foundBakery.getWeight() + "</td>\n" +
@@ -72,7 +73,7 @@ public class SearchBakeryServlet extends HttpServlet {
             if (Objects.equals(productCountryOfOrigin, foundBakery.getCountryOfOrigin())) {
 
                 response.getWriter().append(SEARCH_TABLE_STYLE +
-                        "<tr>\n"  +
+                        "<tr>\n" +
                         "    <td>" + foundBakery.getName() + "</td>\n" +
                         "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
                         "    <td>" + foundBakery.getWeight() + "</td>\n" +
@@ -87,7 +88,7 @@ public class SearchBakeryServlet extends HttpServlet {
             String calorie = Double.toString(cC);
             if (Objects.equals(productCaloricContent, calorie)) {
                 response.getWriter().append(SEARCH_TABLE_STYLE +
-                        "<tr>\n"  +
+                        "<tr>\n" +
                         "    <td>" + foundBakery.getName() + "</td>\n" +
                         "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
                         "    <td>" + foundBakery.getWeight() + "</td>\n" +
@@ -117,7 +118,7 @@ public class SearchBakeryServlet extends HttpServlet {
             String price = Double.toString(pR);
             if (Objects.equals(productPrice, price)) {
                 response.getWriter().append(SEARCH_TABLE_STYLE +
-                        "<tr>\n"  +
+                        "<tr>\n" +
                         "    <td>" + foundBakery.getName() + "</td>\n" +
                         "    <td>" + foundBakery.getCaloricContent() + "</td>\n" +
                         "    <td>" + foundBakery.getWeight() + "</td>\n" +
@@ -139,28 +140,4 @@ public class SearchBakeryServlet extends HttpServlet {
         response.getWriter().append(WELCOME_PAGE);
 
     }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
-
-        String pName = request.getParameter(NAME);
-        String pCaloricContent = request.getParameter(CALORIC_CONTENT);
-        String pWeight = request.getParameter(WEIGHT);
-        String pManufacturer = request.getParameter(MANUFACTURER);
-        String pCountryOfOrigin = request.getParameter(COUNTRY_OF_ORIGIN);
-        String pPrice = request.getParameter(PRICE);
-
-        Bakery bakery = new Bakery(pName,Double.valueOf(pCaloricContent),Double.valueOf(pWeight),
-                pManufacturer,pCountryOfOrigin,Double.valueOf(pPrice));
-       add(bakery);
-
-
-        response.getWriter().append(HTML_BODY_BEGIN);
-        response.getWriter().append("<p style=\"font-size:20px; color: goldenrod; margin: 15px;\">New product added!</p>");
-        response.getWriter().append(BAKERY_JSP_SEARCH_PAGE_A_P);
-        response.getWriter().append(RETURN_BACK_A_P);
-        response.getWriter().append(WELCOME_PAGE);
-        response.getWriter().append(HTML_BODY_END);
-    }
-
 }

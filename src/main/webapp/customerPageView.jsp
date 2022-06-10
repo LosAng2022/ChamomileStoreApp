@@ -3,14 +3,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Basket</title>
+    <title>Customer Page</title>
 </head>
 <body>
 <link rel="stylesheet" href="style.css">
 
-<h3>Товыры в корзине</h3>
+<h3 style="font-size:30px; margin: 30px; color: goldenrod;">Личный кабинет</h3> <br>
 
-Hello, This is a protected page!
+<jsp:include page="_customerMenu.jsp"></jsp:include>
+
+
+
 
 </body>
 </html>

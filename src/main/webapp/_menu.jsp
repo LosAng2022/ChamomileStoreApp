@@ -17,7 +17,7 @@
 <a style="font-size:15px; margin: 10px; color:green;" href="./login">Авторизация</a>
 <a style="font-size:15px; color:green;">||</a>
 <a style="font-size:15px; margin: 10px; color:green;" href="./logout">Выход</a>
-
+<a style="font-size:15px; color:green;">||</a>
 <a style="font-size:15px; margin: 10px; color:green;" href="./viewBasket">Корзина</a>
 &nbsp;
 <span style="color:red">[ ${loginedUser.userName} ]</span>

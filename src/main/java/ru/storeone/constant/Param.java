@@ -8,6 +8,9 @@ public class Param {
     public static final String WEIGHT = "weight";
     public static final String PRICE = "price";
 
+    public static final String CONTAIN = "contain";
+    public static final String AMOUNT = "amount";
+
     public static final String HTML_BODY_BEGIN = "<html><head><link rel=\"stylesheet\" href=\"style.css\">\n</head><body>";
 
     public static final String HTML_BODY_END = "</body></html>";
