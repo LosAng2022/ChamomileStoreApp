@@ -32,5 +32,8 @@
         </tr>
     </table>
 </form>
+
+<p style="font-size:15px; margin: 10px; color:white;">customer - 123;</p><br>
+<p style="font-size:15px; margin: 10px; color:white;">manager - 124</p><br>
 </body>
 </html>

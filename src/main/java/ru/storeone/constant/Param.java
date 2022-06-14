@@ -40,6 +40,7 @@ public class Param {
 
     public static final String DAIRY_JSP_SEARCH_PAGE_A_P = "<p><a style=font-size:25px;color:white href=\"./searchDairy.jsp\">Search page</a></p>";
 
+
     public static final String VIEW_PRODUCTS_P = "<p style=font-size:25px;color:white>View Products:</p>";
 
     public static final String BEE_JSP_SEARCH_PAGE_A_P = "<p><a style=font-size:25px;color:white href=\"./searchBee.jsp\">Search page</a></p>";

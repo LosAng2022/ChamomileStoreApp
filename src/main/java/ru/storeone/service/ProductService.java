@@ -1,5 +1,6 @@
 package ru.storeone.service;
 
+import ru.storeone.product.Product;
 import ru.storeone.product.bakery.Bakery;
 import ru.storeone.product.bakery.Bread;
 import ru.storeone.product.beeproducts.BeeProducts;
@@ -12,6 +13,7 @@ import ru.storeone.product.dairy.Kefir;
 import ru.storeone.product.dairy.Milk;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class ProductService {
@@ -92,6 +94,7 @@ public class ProductService {
         return beeProductsArrayList;
     }
 
-
-
+    public static synchronized void add(Dairy dairy) {
+        allDP().add(dairy);
+    }
 }

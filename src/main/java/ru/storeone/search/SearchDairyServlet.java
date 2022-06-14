@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Map;
 import java.util.Objects;
 
 import static ru.storeone.constant.Param.*;
@@ -23,16 +24,17 @@ public class SearchDairyServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
         ProductService.allDP();
+
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
+
         String productName = request.getParameter(NAME);
         String productManufacturer = request.getParameter(MANUFACTURER);
         String productCountryOfOrigin = request.getParameter(COUNTRY_OF_ORIGIN);
         String productFatContent = request.getParameter(FAT_CONTENT);
         String productVolume = request.getParameter(VOLUME);
         String productPrice = request.getParameter(PRICE);
-
 
         for (int i = 0; i < ProductService.allDP().size(); i++) {
             Dairy foundDairy = ProductService.allDP().get(i);
@@ -126,6 +128,7 @@ public class SearchDairyServlet extends HttpServlet {
                         "    <td>" + "<p><a style=color:green href=\"./addToBasketDairy?name=" + foundDairy.getName() + "\">Add to basket</a></p>" + "</td>\n" +
                         "  </tr>\n" +
                         "</table>");
+
             }
 
             response.getWriter().append(HTML_BODY_END);
@@ -137,6 +140,25 @@ public class SearchDairyServlet extends HttpServlet {
         response.getWriter().append(RETURN_BACK_A_P);
         response.getWriter().append(WELCOME_PAGE);
 
+    }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
+
+        String pName = request.getParameter(NAME);
+        String pManufacturer = request.getParameter(MANUFACTURER);
+        String pCountryOfOrigin = request.getParameter(COUNTRY_OF_ORIGIN);
+        String pFatContent = request.getParameter(FAT_CONTENT);
+        String pVolume = request.getParameter(VOLUME);
+        String pPrice = request.getParameter(PRICE);
+
+        Dairy dairy = new Dairy(pName, Double.valueOf(pFatContent), Double.valueOf(pVolume), pManufacturer, pCountryOfOrigin, Double.valueOf(pPrice));
+        ProductService.add(dairy);
+
+
+        response.getWriter().append(HTML_BODY_BEGIN);
+        response.getWriter().append("<p style=\"font-size:30px; color: goldenrod; margin: 30px;\">New product added!</p>");
+        response.getWriter().append(DAIRY_JSP_SEARCH_PAGE_A_P);
+        response.getWriter().append(HTML_BODY_END);
     }
 
 }
